@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: #373B53;
+    padding-right: 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 72px;
+    height: 72px;
+    background: #7c5dfa;
+    border-radius: 0 20px 20px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons-avatar {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+#icon-sun {
+    display: none;
+}
+
+#icon-moon {
+    cursor: pointer;
+}
+
+.line {
+    width: 1px;
+    height: 72px;
+    background-color: #494e6e;
+}
+
+.image-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
