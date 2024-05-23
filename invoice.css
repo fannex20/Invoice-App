@@ -8,6 +8,7 @@
 
 /* Body */
 body {
+    background: var(--11, #F8F8FB);
     font-family: "League Spartan", sans-serif;
 }
 
@@ -59,6 +60,7 @@ header {
     border-radius: 50%;
 }
 
+
 /* Go Back Section */
 .goBack {
     gap: 24px;
@@ -75,6 +77,56 @@ header {
 
 .goBack p {
     color: var(--08, #0C0E16);
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: -0.25px;
+}
+
+.viewInvoice {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 31px 24px 56px;
+}
+
+/* Status Content */
+.statusContent {
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 10px 10px -10px rgba(72, 84, 159, 0.10);
+    padding: 24px 24px 27px 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.statusContent p {
+    color: #858BB2;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: -0.1px;
+}
+
+#statusInfo {
+    gap: 8px;
+    padding: 14px 19px 11px 18px;
+
+    display: flex;
+    align-items: center;
+}
+
+.circle {
+    width: 8px;
+    height: 8px;
+    background-color: #ff8f00;
+    border-radius: 50%;
+}
+
+#statusInfo p {
+    color: #FF8F00;
     font-size: 15px;
     font-weight: 700;
     line-height: 15px;
