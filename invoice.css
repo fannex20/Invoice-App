@@ -60,6 +60,12 @@ header {
     border-radius: 50%;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 31px 24px 56px
+}
 
 /* Go Back Section */
 .goBack {
@@ -87,7 +93,6 @@ header {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    margin: 31px 24px 56px;
 }
 
 /* Status Content */
@@ -180,4 +185,118 @@ header {
     font-weight: 500;
     line-height: 18px;
     letter-spacing: -0.1px;
+}
+
+/* Date Payment Bill */
+.date-payment-bill {
+    margin-top: 31px;
+    display: flex;
+}
+
+/* Date and Payment */
+.date-payment {
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+}
+
+/* Date */
+#invoiceDate {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+#invoiceDate span {
+    color: var(--07, #7E88C3);
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: -0.1px;
+}
+
+.createdAt {
+    color: var(--08, #0C0E16);
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.25px;
+}
+
+/* Payment */
+#paymentDue {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+#paymentDue span {
+    color: var(--07, #7E88C3);
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: -0.1px;
+}
+
+.paymentDue {
+    color: var(--08, #0C0E16);
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.25px;
+}
+
+/* Bill */
+#bill {
+    margin-left: 61px;
+}
+
+#bill span {
+    color: var(--07, #7E88C3);
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: -0.1px;
+}
+
+.clientName {
+    color: var(--08, #0C0E16);
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.25px;
+    padding-top: 13px;
+}
+
+.clientAdress {
+    color: var(--07, #7E88C3);
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: -0.1px;
+    padding-top: 7px;
+}
+
+/* Send Mail */
+#sendMail {
+    margin-top: 32px;
+    gap: 13px;
+    display: flex;
+    flex-direction: column;
+}
+
+#sendMail span {
+    color: var(--07, #7E88C3);
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: -0.1px;
+}
+
+.clientEmail {
+    color: var(--08, #0C0E16);
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.25px;
 }

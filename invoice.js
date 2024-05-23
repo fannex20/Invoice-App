@@ -42,6 +42,18 @@ let profession = document.getElementById("profession");
 // Location Info
 let locationInfo = document.getElementById("locationInfo")
 
+// Invoice Date 
+let invoiceDate = document.getElementById("invoiceDate");
+
+// payment Due
+let paymentDue = document.getElementById("paymentDue")
+
+// Bill
+let Bill = document.getElementById("bill");
+
+// Send Mail
+let sendMail = document.getElementById("sendMail")
+
 async function fetchData() {
     const response = await fetch("data.json");
     const data = await response.json();
@@ -64,6 +76,26 @@ async function fetchData() {
          <br>${invoice.senderAddress.postCode}
          <br>${invoice.senderAddress.country}
     </p>
+    `
+
+    invoiceDate.innerHTML += `
+        <p class = "createdAt">${invoice.createdAt}</p>
+    `
+
+    paymentDue.innerHTML += `
+        <p class = "paymentDue">${invoice.paymentDue}</p>
+    `
+
+    Bill.innerHTML += `
+    <p class = "clientName">${invoice.clientName}</p>
+    <p class = "clientAdress">${invoice.clientAddress.street}
+        <br>${invoice.clientAddress.city}
+        <br>${invoice.clientAddress.postCode}
+        <br>${invoice.clientAddress.country}
+    `
+
+    sendMail.innerHTML += `
+        <p class = "clientEmail">${invoice.clientEmail}</p>
     `
 }
 
