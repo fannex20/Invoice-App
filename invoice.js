@@ -84,6 +84,12 @@ let promptContainer = document.getElementById("promptContainer")
 // Prompt Container Text
 let promptContainerText = document.getElementById("promptContainerText");
 
+// cancel Button
+let cancelBtn = document.getElementById("cancelBtn");
+
+// Prompt Delete Button
+let promptDelete = document.getElementById("promptDelete")
+
 
 async function fetchData() {
     const response = await fetch("data.json");
@@ -162,4 +168,30 @@ fetchData();
 deleteBtn.addEventListener("click", () => {
     promptContainer.style.display = "block"
     invoiceView.style.opacity = "0.4984"
-})
+});
+
+// Cancel Button Functional
+cancelBtn.addEventListener("click", () => {
+    invoiceView.style.opacity = "1"
+    promptContainer.style.display = "none"
+});
+
+
+async function deleteInvoiceData() {
+    const response = await fetch(`https://invoiceapi-rpgn.onrender.com/api/invoices/${invoiceId}`, {
+        method: "DELETE",
+        headers: {
+            "Content-Type": "application/json",
+        },
+
+    })
+
+    const data = await response.json();
+
+    window.location.href = "index.html";
+}
+
+// Prompt Delete Button Functional
+promptDelete.addEventListener("click", () => {
+    deleteInvoiceData()
+});
