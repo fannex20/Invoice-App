@@ -1,4 +1,8 @@
 let body = document.querySelector("body");
+
+let invoiceView = document.getElementById("invoiceView")
+
+// Header
 let header = document.querySelector("header")
 
 
@@ -74,6 +78,13 @@ let deleteBtn = document.getElementById("deleteBtn");
 // Mark As Paid Button
 let MarkAsPaidBtn = document.getElementById("MarkAsPaidBtn");
 
+// Prompt Container
+let promptContainer = document.getElementById("promptContainer")
+
+// Prompt Container Text
+let promptContainerText = document.getElementById("promptContainerText");
+
+
 async function fetchData() {
     const response = await fetch("data.json");
     const data = await response.json();
@@ -139,11 +150,16 @@ async function fetchData() {
     totalContainer.innerHTML += `
         <p class = total><span>£</span>${invoice.total}</p>
     `
+
+    promptContainerText.innerHTML += `
+        <p>Are you sure you want to delete invoice ${invoiceId}? This action cannot be undone.</p>
+    `
 }
 
 fetchData();
 
 // Delete Button Listener
 deleteBtn.addEventListener("click", () => {
-
+    promptContainer.style.display = "block"
+    invoiceView.style.opacity = "0.4984"
 })

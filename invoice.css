@@ -12,6 +12,7 @@ body {
     font-family: "League Spartan", sans-serif;
 }
 
+
 /* Header Section */
 
 header {
@@ -469,4 +470,37 @@ footer {
 #MarkAsPaidBtn:hover {
     background: var(--02, #9277FF);
     cursor: pointer;
+}
+
+/* Prompt Container */
+#promptContainer {
+    display: none;
+
+    background: #FFF;
+    border-radius: 8px;
+    box-shadow: 0px 10px 10px -10px rgba(72, 84, 159, 0.10);
+    padding: 34px 32px 32px 32px;
+    position: absolute;
+    top: 440px;
+    margin-left: 24px;
+    margin-right: 24px;
+
+}
+
+#promptContainerText h2 {
+    color: var(--08, #0C0E16);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.5px;
+}
+
+#promptContainerText p {
+    color: var(--06, #888EB0);
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: -0.1px;
+    padding-top: 8px;
 }
