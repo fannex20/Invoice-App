@@ -54,6 +54,26 @@ let Bill = document.getElementById("bill");
 // Send Mail
 let sendMail = document.getElementById("sendMail")
 
+// Banner Design
+let bannerDesignAmount = document.getElementById("bannerDesign-amount");
+let bannerDesignPrice = document.getElementById("bannerDesign-price");
+
+// Email Design
+let emailDesignAmount = document.getElementById("emailDesign-amount");
+let emailDesignPrice = document.getElementById("emailDesign-price");
+
+// Total Container
+let totalContainer = document.getElementById("totalContainer");
+
+// Edit Button
+let editBtn = document.getElementById("editBtn");
+
+// Delete Button
+let deleteBtn = document.getElementById("deleteBtn");
+
+// Mark As Paid Button
+let MarkAsPaidBtn = document.getElementById("MarkAsPaidBtn");
+
 async function fetchData() {
     const response = await fetch("data.json");
     const data = await response.json();
@@ -97,6 +117,33 @@ async function fetchData() {
     sendMail.innerHTML += `
         <p class = "clientEmail">${invoice.clientEmail}</p>
     `
+
+    bannerDesignAmount.innerHTML += `
+        <p class = "itemsName">${invoice.items[0].name}</p>
+        <p class = "itemsQuantity">${invoice.items[0].quantity} x <span>£${invoice.items[0].total}</span></p>
+    `
+
+    bannerDesignPrice.innerHTML += `
+    <p class = "itemsPrice">£${invoice.items[0].price}</p>
+    `
+
+    emailDesignAmount.innerHTML += `
+        <p class = "itemsName">${invoice.items[1].name}</p>
+        <p class = "itemsQuantity">${invoice.items[1].quantity} x <span>£${invoice.items[1].price}</span></p>
+    `
+
+    emailDesignPrice.innerHTML += `
+        <p class = "itemsPrice">£${invoice.items[1].price}</p>
+    `
+
+    totalContainer.innerHTML += `
+        <p class = total><span>£</span>${invoice.total}</p>
+    `
 }
 
 fetchData();
+
+// Delete Button Listener
+deleteBtn.addEventListener("click", () => {
+
+})

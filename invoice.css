@@ -300,3 +300,173 @@ main {
     line-height: 20px;
     letter-spacing: -0.25px;
 }
+
+/* Design */
+.itemNameTitles {
+    display: none;
+}
+
+.Design {
+    border-radius: 8px 8px 0px 0px;
+    background: #F9FAFE;
+    margin-top: 38px;
+    padding: 25px 24px 23px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+/* Banner Design */
+#bannerDesign {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#bannerDesign-amount {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.itemsName {
+    color: var(--08, #0C0E16);
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: -0.25px;
+}
+
+.itemsQuantity {
+    color: var(--07, #7E88C3);
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: -0.25px;
+}
+
+.itemsPrice {
+    color: var(--08, #0C0E16);
+    text-align: right;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: -0.25px;
+}
+
+/* Email Design */
+#emailDesign {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#emailDesign-amount {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Total Container */
+#totalContainer {
+    border-radius: 0px 0px 8px 8px;
+    background: #373B53;
+    padding: 26px 24px 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.grandTotal {
+    color: #FFF;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: -0.1px;
+}
+
+.total {
+    color: #FFF;
+    text-align: right;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.5px;
+}
+
+#totalContainer span {
+    color: #FFF;
+    text-align: right;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.5px;
+}
+
+/* Footer */
+footer {
+    background: #FFF;
+    box-shadow: 0px 10px 10px -10px rgba(72, 84, 159, 0.10);
+    padding: 21px 24px 22px;
+    gap: 8px;
+
+    display: flex;
+    align-items: center;
+}
+
+/* Edit Button */
+#editBtn {
+    width: 73px;
+    height: 48px;
+    border-radius: 24px;
+    background: #F9FAFE;
+    border: none;
+
+    color: var(--07, #7E88C3);
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: -0.25px;
+}
+
+#editBtn:hover {
+    cursor: pointer;
+    background: var(--05, #DFE3FA);
+}
+
+/* Delete Button */
+#deleteBtn {
+    background-color: #ec5757;
+    width: 89px;
+    height: 48px;
+    border: none;
+    border-radius: 24px;
+
+    color: #fff;
+    font-size: 15px;
+    line-height: 1;
+    letter-spacing: -0.25px;
+}
+
+#deleteBtn:hover {
+    cursor: pointer;
+    background: var(--10, #FF9797);
+}
+
+/* Mark As Paid Button */
+#MarkAsPaidBtn {
+    width: 149px;
+    height: 48px;
+    border-radius: 24px;
+    background-color: #7c5dfa;
+    border: none;
+
+    box-shadow: 0 10px 10px -10px rgba(72, 84, 159, 0.1);
+    color: #fff;
+}
+
+#MarkAsPaidBtn:hover {
+    background: var(--02, #9277FF);
+    cursor: pointer;
+}
